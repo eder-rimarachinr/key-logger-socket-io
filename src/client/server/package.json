@@ -1,0 +1,23 @@
+{
+  "name": "chat_realtime",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch ./server/index.js",
+    "start-node": "node server/index.js",
+    "start-rust": "cd ../../ && cargo build && cargo run",
+    "start-both": "npm-run-all --parallel start-node start-rust"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.2",
+    "key-reader-logger": "^1.0.1-d",
+    "morgan": "^1.10.0",
+    "socket.io": "4.7.2"
+  }
+}
